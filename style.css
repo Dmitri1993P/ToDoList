@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif; 
+
+}
+
+body{
+    height: 95vh;
+    width: 100%;
+    background: linear-gradient( to bottom, #68eaa3 0%, #e8dd49 100%);
+    /* Тут дали нашему заднему фону красивый градиент, который переливается, уточнили что это задник */
+}
+
+.wrapper {
+    margin: 120px auto;
+    max-width: 570px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    -webkit-box-shadow: 0 2px 10px 0 #ffffff;
+	box-shadow: 0 2px 10px 0 #ffffff;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wrapper .inputField {
+    display:flex;
+    height: 45px;
+    width: 100%;
+    margin:20px 0;
+}
+#input{
+    outline: none;
+    width:85%;
+    height: 100%;
+    border: 1px solid #f5f5dc;
+    font-size: 20px;
+    border-radius: 3px;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+#button{
+    width:50px;
+    height: 100%;
+    border:none;
+    outline: none;
+    background:#68eaa3;
+    color:white;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 15px;
+    transition: all 0.25s ease;
+}
+#list{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+#list li{
+
+    list-style: none;
+    color: rgba(0, 0, 0, 0.810);
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    font-weight: bold;
+    font-size: small;
+    background: #f5f5dc27;
+    border-radius: 5px 10px 10px 5px;
+    margin-bottom: 5px;
+    padding: 0 5px;
+    cursor: default;
+    overflow:hidden;
+    -webkit-box-shadow: 0 2px 10px 0 #ffffff;
+	box-shadow: 0 2px 10px 0 #ffffff;
+    transition: all 0.3s ease;
+
+}
+
+
+#list li span{
+    position: absolute;
+    right: -45px;
+    color: #f5f5dc88;
+    width: 45px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    background: #f5f5dc00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#list li:hover{
+    background: #68eaa313;
+}
+
+#list li:hover span{
+    right: -5px;
+    color: red;
+}
+
+#input:hover{
+    border-color: rgba(0, 128, 0, 0.384);
+}
+#button:hover{
+    background:white;
+    color:#68eaa3 ;
+}
+
+
+#list li:hover{
+    color: black;
+}
